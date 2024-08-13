@@ -8,3 +8,4 @@ scikit-learn
 Word2Vec
 gensim
 joblib
+scipy
