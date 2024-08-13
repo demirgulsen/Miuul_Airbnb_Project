@@ -1,9 +1,10 @@
 streamlit
 numpy
 pandas
-plotly
-joblib
-scikit-learn
-Word2Vec
 matplotlib
 seaborn
+plotly
+scikit-learn
+joblib
+Word2Vec
+gensim
