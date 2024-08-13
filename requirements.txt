@@ -4,3 +4,6 @@ pandas
 plotly
 joblib
 scikit-learn
+Word2Vec
+matplotlib
+seaborn
