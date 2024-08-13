@@ -5,6 +5,6 @@ matplotlib
 seaborn
 plotly
 scikit-learn
-joblib
 Word2Vec
 gensim
+joblib
