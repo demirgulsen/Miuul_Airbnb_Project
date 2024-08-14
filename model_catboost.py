@@ -5,7 +5,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import RandomizedSearchCV, cross_val_score
 from catboost import CatBoostRegressor
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
-
 from sklearn.exceptions import ConvergenceWarning
 import warnings
 

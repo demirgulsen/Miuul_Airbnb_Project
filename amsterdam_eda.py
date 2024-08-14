@@ -4,27 +4,21 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import date
 import re
-
-from sklearn.preprocessing import MinMaxScaler, LabelEncoder, StandardScaler
-from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, make_scorer
+from sklearn.preprocessing import LabelEncoder, StandardScaler, OneHotEncoder
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.model_selection import train_test_split, cross_val_score,cross_validate
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.linear_model import LinearRegression
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
-from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestRegressor,GradientBoostingRegressor
 from sklearn.model_selection import GridSearchCV
-from sklearn.ensemble import GradientBoostingRegressor, VotingRegressor
 from xgboost import XGBRegressor
 from catboost import CatBoostRegressor
 from lightgbm import LGBMRegressor
 from sklearn.cluster import KMeans
 from sklearn.neighbors import KNeighborsRegressor
-from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
-from yellowbrick.cluster import KElbowVisualizer
+from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn import metrics
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
 
 pd.set_option('display.max_columns', None)
 # pd.set_option('display.max_rows', 300)
@@ -622,14 +616,6 @@ final_df[num_cols].head()
 #######################################################################################################
 #######################################################################################################
 # Çok iyi sonuçlar veriyor
-
-from sklearn.linear_model import Ridge
-from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import mean_squared_error
-from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.impute import SimpleImputer
 
 # Veriyi bölme ve ön işleme
 def preprocess_data(df):

@@ -1,32 +1,10 @@
-
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, make_scorer
-from sklearn.model_selection import train_test_split, cross_val_score,cross_validate
-from xgboost import XGBRegressor
-from catboost import CatBoostRegressor
-from lightgbm import LGBMRegressor
-from sklearn.ensemble import RandomForestRegressor, AdaBoostRegressor, GradientBoostingRegressor
-
-from sklearn.neighbors import KNeighborsRegressor
-from sklearn.svm import SVR
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.linear_model import LinearRegression
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.model_selection import GridSearchCV
-from sklearn.ensemble import GradientBoostingRegressor, VotingRegressor
-from sklearn.cluster import KMeans
-from yellowbrick.cluster import KElbowVisualizer
-from sklearn import metrics
 import joblib
-from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
+from sklearn.metrics import mean_absolute_error, r2_score
+from sklearn.model_selection import train_test_split, cross_val_score,cross_validate
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import mean_squared_error
@@ -41,7 +19,7 @@ pd.set_option('display.width', 500)
 pd.set_option('display.float_format', lambda x: '%.3f' % x)
 
 # amsterdam_prep.py dosyamızdaki amsterdam_data_prep fonksiyonunu çağırıyoruz
-from amsterdam_prep import amsterdam_data_prep
+# from amsterdam_prep import amsterdam_data_prep
 
 #######################################################################################################
 #                   ~~~~~~      MODEL  - RIDGE    ~~~~~

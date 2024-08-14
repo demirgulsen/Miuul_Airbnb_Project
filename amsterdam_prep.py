@@ -3,11 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import date
-
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder, StandardScaler
 from sklearn.cluster import KMeans
 import re
-
 
 pd.set_option('display.max_columns', None)
 # pd.set_option('display.max_rows', 300)
